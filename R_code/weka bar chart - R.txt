@@ -1,0 +1,154 @@
+>>> library(ggplot2)
+>>> ggplot(rdara, aes(x=class , fill=class)+ geom_bar(stat="count")
+Parse error: 'ggplot(rdara, aes(x=class , fill=class)+ geom_bar(stat="count")
+'
+>>> ggplot(rdara, aes(x=class , fill=class))+ geom_bar(stat="count")
+Error in ggplot(rdara, aes(x = class, fill = class)) : 
+  object 'rdara' not found
+In addition: Warning message:
+In remove(rdata) : object 'rdata' not found
+error during evaluation: 'ggplot(rdara, aes(x=class , fill=class))+ geom_bar(stat="count")
+'
+>>> ggplot(rdata, aes(x=class , fill=class))+ geom_bar(stat="count")
+>>> ggplot(tips, aes(class)) + geom_bar(aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=scales::percent) +  ylab("relative frequencies")
+Error in ggplot(tips, aes(class)) : object 'tips' not found
+error during evaluation: 'ggplot(tips, aes(class)) + geom_bar(aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=scales::percent) +  ylab("relative frequencies")
+'
+>>> ggplot(rdata, aes(class)) + geom_bar(aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=scales::percent) +  ylab("relative frequencies")
+>>> ggplot(rdata, aes(class, fill=class)) + geom_bar(aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=scales::percent) +  ylab("relative frequencies")
+>>> ggplot(rdata, aes(x=class)) + geom_bar(aes(y = ..prop.., fill =class, stat="count") + geom_text(aes( label = scales::percent(..prop..), y= ..prop.. ), stat= "count", vjust = -.5) +  labs(y = "Percent", fill="class") + scale_y_continuous(labels = scales::percent)
+Parse error: 'ggplot(rdata, aes(x=class)) + geom_bar(aes(y = ..prop.., fill =class, stat="count") + geom_text(aes( label = scales::percent(..prop..), y= ..prop.. ), stat= "count", vjust = -.5) +  labs(y = "Percent", fill="class") + scale_y_continuous(labels = scales::percent)
+'
+>>> ggplot(rdata, aes(x=class)) + geom_bar(aes(y = ..prop.., fill =class, stat="count") + geom_text(aes( label = scales::percent(..prop..), y= ..prop.. ), stat= "count") +  labs(y = "Percent", fill="class") + scale_y_continuous(labels = scales::percent)
+Parse error: 'ggplot(rdata, aes(x=class)) + geom_bar(aes(y = ..prop.., fill =class, stat="count") + geom_text(aes( label = scales::percent(..prop..), y= ..prop.. ), stat= "count") +  labs(y = "Percent", fill="class") + scale_y_continuous(labels = scales::percent)
+'
+>>> ggplot(rdata, aes(x=class)) + geom_bar(aes(y = ..prop.., fill =class, stat="count") + geom_text(aes( label = scales::percent(..prop..), y= ..prop.. ), stat= "count") +  ylabs(y = "Percent", fill="class") + scale_y_continuous(labels = scales::percent)
+Parse error: 'ggplot(rdata, aes(x=class)) + geom_bar(aes(y = ..prop.., fill =class, stat="count") + geom_text(aes( label = scales::percent(..prop..), y= ..prop.. ), stat= "count") +  ylabs(y = "Percent", fill="class") + scale_y_continuous(labels = scales::percent)
+'
+>>> ggplot(rdata, aes(x=class)) + geom_bar(aes(y = ..prop.., fill =class, stat="count") + geom_text(aes( label = scales::percent(..prop..), y= ..prop.. ), stat= "count") +  ylab(y = "Percent", fill="class") + scale_y_continuous(labels = scales::percent)
+Parse error: 'ggplot(rdata, aes(x=class)) + geom_bar(aes(y = ..prop.., fill =class, stat="count") + geom_text(aes( label = scales::percent(..prop..), y= ..prop.. ), stat= "count") +  ylab(y = "Percent", fill="class") + scale_y_continuous(labels = scales::percent)
+'
+>>> ggplot(rdata, aes(x=class)) + geom_bar(aes(y = ..prop.., fill =class, stat="count") + geom_text(aes( label = scales::percent(..prop..), y= ..prop.. )) + scale_y_continuous(labels = scales::percent)
+Parse error: 'ggplot(rdata, aes(x=class)) + geom_bar(aes(y = ..prop.., fill =class, stat="count") + geom_text(aes( label = scales::percent(..prop..), y= ..prop.. )) + scale_y_continuous(labels = scales::percent)
+'
+>>> ggplot(rdata, aes(x=class)) + geom_bar(aes(y = ..prop.., fill =class, stat="count") + scale_y_continuous(labels = scales::percent)
+Parse error: 'ggplot(rdata, aes(x=class)) + geom_bar(aes(y = ..prop.., fill =class, stat="count") + scale_y_continuous(labels = scales::percent)
+'
+>>> ggplot(rdata, aes(class)) + geom_bar(aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=scales::percent) +  ylab("relative frequencies") geom_text(aes( label = scales::percent(..prop..), y= ..prop.. ), stat= "count")
+Parse error: 'ggplot(rdata, aes(class)) + geom_bar(aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=scales::percent) +  ylab("relative frequencies") geom_text(aes( label = scales::percent(..prop..), y= ..prop.. ), stat= "count")
+'
+>>> library(reshape2)
+>>> library(dplyr)
+Error in library(dplyr) : there is no package called 'dplyr'
+error during evaluation: 'library(dplyr)
+'
+>>> install.packages("dplyr")
+Installing package into 'C:/Users/JIBIMO SYLVANUS/Documents/R/win-library/4.0'
+(as 'lib' is unspecified)
+also installing the dependencies 'purrr', 'generics', 'tidyselect'
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.0/purrr_0.3.4.zip'
+Content type 'application/zip' length 429066 bytes (419 KB)
+downloaded 419 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.0/generics_0.0.2.zip'
+Content type 'application/zip' length 64141 bytes (62 KB)
+downloaded 62 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.0/tidyselect_1.1.0.zip'
+Content type 'application/zip' length 203269 bytes (198 KB)
+downloaded 198 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.0/dplyr_1.0.0.zip'
+Content type 'application/zip' length 1303435 bytes (1.2 MB)
+downloaded 1.2 MB
+
+package 'purrr' successfully unpacked and MD5 sums checked
+package 'generics' successfully unpacked and MD5 sums checked
+package 'tidyselect' successfully unpacked and MD5 sums checked
+package 'dplyr' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\JIBIMO SYLVANUS\AppData\Local\Temp\Rtmp0MAd3x\downloaded_packages
+>>> 
+>>> library(dplyr)
+
+Attaching package: 'dplyr'
+
+The following object is masked from 'package:ggplot2':
+
+    vars
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+>>> install.packages("tidyr")
+Installing package into 'C:/Users/JIBIMO SYLVANUS/Documents/R/win-library/4.0'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.0/tidyr_1.1.0.zip'
+Content type 'application/zip' length 1514837 bytes (1.4 MB)
+downloaded 1.4 MB
+
+package 'tidyr' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\JIBIMO SYLVANUS\AppData\Local\Temp\Rtmp0MAd3x\downloaded_packages
+>>> library(tidyr)
+
+Attaching package: 'tidyr'
+
+The following object is masked from 'package:reshape2':
+
+    smiths
+
+>>> install.packages("scales")
+Installing package into 'C:/Users/JIBIMO SYLVANUS/Documents/R/win-library/4.0'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.0/scales_1.1.1.zip'
+Content type 'application/zip' length 561205 bytes (548 KB)
+downloaded 548 KB
+
+package 'scales' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\JIBIMO SYLVANUS\AppData\Local\Temp\Rtmp0MAd3x\downloaded_packages
+>>> library(scales)
+>>> ggplot(rdata, aes(class)) + geom_bar(aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=scales::percent) +  ylab("relative frequencies") geom_text(aes( label = scales::percent(..prop..), y= ..prop.. ), stat= "count")
+Parse error: 'ggplot(rdata, aes(class)) + geom_bar(aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=scales::percent) +  ylab("relative frequencies") geom_text(aes( label = scales::percent(..prop..), y= ..prop.. ), stat= "count")
+'
+>>> ggplot(rdata, aes(x=class)) + geom_bar(aes(y = ..prop.., fill =class, stat="count") + geom_text(aes( label = scales::percent(..prop..), y= ..prop.. ), stat= "count") +  ylab(y = "Percent", fill="class") + scale_y_continuous(labels = scales::percent)
+Parse error: 'ggplot(rdata, aes(x=class)) + geom_bar(aes(y = ..prop.., fill =class, stat="count") + geom_text(aes( label = scales::percent(..prop..), y= ..prop.. ), stat= "count") +  ylab(y = "Percent", fill="class") + scale_y_continuous(labels = scales::percent)
+'
+>>> ggplot(rdata, aes(x=class)) + geom_bar(aes(fill =class, stat="count") + geom_text(aes( ), stat= "count") +  ylab(y = "Percent", fill="class") + scale_y_continuous(labels = scales::percent)
+Parse error: 'ggplot(rdata, aes(x=class)) + geom_bar(aes(fill =class, stat="count") + geom_text(aes( ), stat= "count") +  ylab(y = "Percent", fill="class") + scale_y_continuous(labels = scales::percent)
+'
+>>> ggplot(rdata, aes(x=class)) + geom_bar(aes(fill =class, stat="count") + geom_text(aes( ), stat= "count") +  ylab(y = "Percent", fill="class") + scale_y_continuous(labels = scales::percent)
+Parse error: 'ggplot(rdata, aes(x=class)) + geom_bar(aes(fill =class, stat="count") + geom_text(aes( ), stat= "count") +  ylab(y = "Percent", fill="class") + scale_y_continuous(labels = scales::percent)
+'
+>>> ggplot(rdata, aes(x=class)) + geom_bar(aes(fill =class, stat="count") + geom_text(aes( ), stat= "count") +  ylab(y = "Percent") + scale_y_continuous(labels = scales::percent)
+Parse error: 'ggplot(rdata, aes(x=class)) + geom_bar(aes(fill =class, stat="count") + geom_text(aes( ), stat= "count") +  ylab(y = "Percent") + scale_y_continuous(labels = scales::percent)
+'
+>>> ggplot(rdata, aes(x=class)) + geom_bar(aes(fill =class, stat="count") + geom_text(aes( ), stat= "count") + scale_y_continuous(labels = scales::percent)
+Parse error: 'ggplot(rdata, aes(x=class)) + geom_bar(aes(fill =class, stat="count") + geom_text(aes( ), stat= "count") + scale_y_continuous(labels = scales::percent)
+'
+>>> ggplot(rdata, aes(class)) + geom_bar(aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=scales::percent) +  ylab("relative frequencies") geom_text(aes( label = scales::percent(..prop..), y= ..prop.. ), stat= "count")
+Parse error: 'ggplot(rdata, aes(class)) + geom_bar(aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=scales::percent) +  ylab("relative frequencies") geom_text(aes( label = scales::percent(..prop..), y= ..prop.. ), stat= "count")
+'
+>>> ggplot(rdata, aes(class)) + geom_bar(aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=scales::percent) +  ylab("relative frequencies") geom_text(aes( label = scales::percent(.\\), stat= "count")
+Parse error: 'ggplot(rdata, aes(class)) + geom_bar(aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=scales::percent) +  ylab("relative frequencies") geom_text(aes( label = scales::percent(.\\), stat= "count")
+'
+>>> ggplot(rdata, aes(class)) + geom_bar(aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=scales::percent) +  ylab("relative frequencies") geom_text(aes( stat= "count")
+Parse error: 'ggplot(rdata, aes(class)) + geom_bar(aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=scales::percent) +  ylab("relative frequencies") geom_text(aes( stat= "count")
+'
+>>> ggplot(rdata, aes(class)) + geom_bar(aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=scales::percent) +  ylab("relative frequencies")
+>>> ggplot(rdata, aes(class)) + geom_bar(aes(y = (..count..)/sum(..count..), fill=class)) + scale_y_continuous(labels=scales::percent) +  ylab("relative frequencies")
+>>> ggplot(rdata, aes(class)) + geom_bar(aes(y = (..count..)/sum(..count..), fill=class)) + scale_y_continuous(labels=scales::percent) +  ylab("frequencies")
+>>> ggplot(rdata, aes(class)) + geom_bar(aes(y = (..count..), fill=class)) + scale_y_continuous(labels=scales::percent) +  ylab("frequencies")
+>>> ggplot(rdata, aes(class)) + geom_bar(aes(y = (..count..)/sum(..count..), fill=class)) + scale_y_continuous(labels=scales::percent) +  ylab("relative frequencies")
+>>> ggplot(rdata, aes(class)) +geom_bar(aes(y = (..count..)/sum(..count..), fill=class), stat= "count")+geom_text(aes(label = scales::percent((..count..)/sum(..count..)), y= ((..count..)/sum(..count..))), stat="count", vjust = -.25)
+>>> 

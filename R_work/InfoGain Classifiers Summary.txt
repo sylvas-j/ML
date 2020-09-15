@@ -1,0 +1,220 @@
+####################################################
+# NaiveBayes Classifiers Summary
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        5043               68.5936 %
+Incorrectly Classified Instances      2309               31.4064 %
+Kappa statistic                          0.622 
+Mean absolute error                      0.1058
+Root mean squared error                  0.3118
+Relative absolute error                 38.2114 %
+Root relative squared error             83.7902 %
+Total Number of Instances             7352     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.956    0.109    0.669      0.956    0.787      0.747    0.971     0.866     STANDING
+                 0.521    0.113    0.493      0.521    0.507      0.399    0.879     0.568     SITTING
+                 0.464    0.012    0.902      0.464    0.613      0.597    0.967     0.836     LAYING
+                 0.794    0.069    0.698      0.794    0.743      0.690    0.955     0.774     WALKING
+                 0.832    0.023    0.850      0.832    0.841      0.816    0.983     0.915     WALKING_DOWNSTAIRS
+                 0.570    0.053    0.647      0.570    0.606      0.545    0.935     0.676     WALKING_UPSTAIRS
+Weighted Avg.    0.686    0.065    0.709      0.686    0.678      0.628    0.948     0.772     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f   <-- classified as
+ 1314   24   34    2    0    0 |    a = STANDING
+  574  670   37    4    0    1 |    b = SITTING
+   76  664  653    1    7    6 |    c = LAYING
+    0    0    0  974   41  211 |    d = WALKING
+    0    0    0   50  820  116 |    e = WALKING_DOWNSTAIRS
+    0    0    0  364   97  612 |    f = WALKING_UPSTAIRS
+
+########################################################
+# ClassificationViaRegression Classifier Summary
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6773               92.1246 %
+Incorrectly Classified Instances       579                7.8754 %
+Kappa statistic                          0.9052
+Mean absolute error                      0.046 
+Root mean squared error                  0.1426
+Relative absolute error                 16.6149 %
+Root relative squared error             38.33   %
+Total Number of Instances             7352     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.908    0.026    0.889      0.908    0.898      0.874    0.991     0.958     STANDING
+                 0.862    0.029    0.862      0.862    0.862      0.833    0.984     0.936     SITTING
+                 0.938    0.009    0.961      0.938    0.949      0.938    0.991     0.984     LAYING
+                 0.967    0.014    0.932      0.967    0.949      0.939    0.997     0.986     WALKING
+                 0.950    0.008    0.951      0.950    0.951      0.943    0.997     0.985     WALKING_DOWNSTAIRS
+                 0.910    0.009    0.945      0.910    0.927      0.915    0.995     0.978     WALKING_UPSTAIRS
+Weighted Avg.    0.921    0.016    0.922      0.921    0.921      0.905    0.992     0.970     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f   <-- classified as
+ 1247  126    1    0    0    0 |    a = STANDING
+  124 1108   53    0    0    1 |    b = SITTING
+   32   51 1320    0    2    2 |    c = LAYING
+    0    0    0 1185   16   25 |    d = WALKING
+    0    0    0   20  937   29 |    e = WALKING_DOWNSTAIRS
+    0    0    0   67   30  976 |    f = WALKING_UPSTAIRS
+
+
+#####################################################################
+# KNN Classifier Summary
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6794               92.4102 %
+Incorrectly Classified Instances       558                7.5898 %
+Kappa statistic                          0.9086
+Mean absolute error                      0.0255
+Root mean squared error                  0.159 
+Relative absolute error                  9.2185 %
+Root relative squared error             42.7264 %
+Total Number of Instances             7352     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.913    0.023    0.900      0.913    0.906      0.884    0.945     0.844     STANDING
+                 0.875    0.025    0.880      0.875    0.877      0.851    0.927     0.803     SITTING
+                 0.959    0.007    0.968      0.959    0.964      0.955    0.977     0.942     LAYING
+                 0.963    0.016    0.924      0.963    0.943      0.932    0.972     0.902     WALKING
+                 0.933    0.009    0.941      0.933    0.937      0.927    0.962     0.889     WALKING_DOWNSTAIRS
+                 0.898    0.010    0.937      0.898    0.917      0.904    0.946     0.861     WALKING_UPSTAIRS
+Weighted Avg.    0.924    0.016    0.924      0.924    0.924      0.909    0.955     0.874     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f   <-- classified as
+ 1254  115    5    0    0    0 |    a = STANDING
+  122 1125   39    0    0    0 |    b = SITTING
+   18   39 1350    0    0    0 |    c = LAYING
+    0    0    0 1181   19   26 |    d = WALKING
+    0    0    0   27  920   39 |    e = WALKING_DOWNSTAIRS
+    0    0    0   70   39  964 |    f = WALKING_UPSTAIRS
+
+
+################################################################
+# J48 Classifier Summary
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6640               90.3156 %
+Incorrectly Classified Instances       712                9.6844 %
+Kappa statistic                          0.8834
+Mean absolute error                      0.0376
+Root mean squared error                  0.1716
+Relative absolute error                 13.5804 %
+Root relative squared error             46.1045 %
+Total Number of Instances             7352     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.884    0.021    0.905      0.884    0.894      0.870    0.972     0.895     STANDING
+                 0.873    0.033    0.847      0.873    0.860      0.830    0.956     0.839     SITTING
+                 0.951    0.010    0.957      0.951    0.954      0.943    0.982     0.956     LAYING
+                 0.907    0.016    0.917      0.907    0.912      0.895    0.955     0.866     WALKING
+                 0.916    0.014    0.913      0.916    0.914      0.901    0.964     0.867     WALKING_DOWNSTAIRS
+                 0.885    0.022    0.875      0.885    0.880      0.859    0.949     0.810     WALKING_UPSTAIRS
+Weighted Avg.    0.903    0.019    0.904      0.903    0.903      0.884    0.964     0.876     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f   <-- classified as
+ 1214  156    4    0    0    0 |    a = STANDING
+  106 1123   56    1    0    0 |    b = SITTING
+   19   47 1338    0    2    1 |    c = LAYING
+    1    0    0 1112   39   74 |    d = WALKING
+    0    0    0   22  903   61 |    e = WALKING_DOWNSTAIRS
+    1    0    0   77   45  950 |    f = WALKING_UPSTAIRS
+
+
+################################################################
+# RandomForest Classifier Summary
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6830               92.8999 %
+Incorrectly Classified Instances       522                7.1001 %
+Kappa statistic                          0.9145
+Mean absolute error                      0.0438
+Root mean squared error                  0.1339
+Relative absolute error                 15.8045 %
+Root relative squared error             35.9763 %
+Total Number of Instances             7352     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.905    0.022    0.905      0.905    0.905      0.883    0.993     0.969     STANDING
+                 0.883    0.028    0.869      0.883    0.876      0.850    0.989     0.952     SITTING
+                 0.956    0.007    0.970      0.956    0.963      0.954    0.997     0.993     LAYING
+                 0.964    0.012    0.941      0.964    0.952      0.943    0.998     0.990     WALKING
+                 0.945    0.008    0.950      0.945    0.948      0.940    0.998     0.988     WALKING_DOWNSTAIRS
+                 0.925    0.009    0.947      0.925    0.935      0.925    0.997     0.985     WALKING_UPSTAIRS
+Weighted Avg.    0.929    0.015    0.929      0.929    0.929      0.914    0.995     0.979     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f   <-- classified as
+ 1243  129    2    0    0    0 |    a = STANDING
+  110 1136   40    0    0    0 |    b = SITTING
+   20   42 1345    0    0    0 |    c = LAYING
+    0    0    0 1182   19   25 |    d = WALKING
+    0    0    0   23  932   31 |    e = WALKING_DOWNSTAIRS
+    0    0    0   51   30  992 |    f = WALKING_UPSTAIRS
+
+
+############################################################
+# RandomTree Classifier Summary
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6463               87.9081 %
+Incorrectly Classified Instances       889               12.0919 %
+Kappa statistic                          0.8544
+Mean absolute error                      0.0403
+Root mean squared error                  0.2008
+Relative absolute error                 14.5553 %
+Root relative squared error             53.9543 %
+Total Number of Instances             7352     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.857    0.030    0.868      0.857    0.862      0.831    0.913     0.770     STANDING
+                 0.827    0.040    0.815      0.827    0.821      0.783    0.893     0.704     SITTING
+                 0.938    0.014    0.939      0.938    0.938      0.924    0.962     0.893     LAYING
+                 0.889    0.024    0.883      0.889    0.886      0.863    0.933     0.804     WALKING
+                 0.906    0.014    0.911      0.906    0.908      0.894    0.946     0.838     WALKING_DOWNSTAIRS
+                 0.857    0.024    0.858      0.857    0.858      0.834    0.917     0.757     WALKING_UPSTAIRS
+Weighted Avg.    0.879    0.025    0.879      0.879    0.879      0.855    0.927     0.795     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f   <-- classified as
+ 1177  174   23    0    0    0 |    a = STANDING
+  161 1063   62    0    0    0 |    b = SITTING
+   17   66 1320    1    1    2 |    c = LAYING
+    1    1    0 1090   35   99 |    d = WALKING
+    0    0    1   41  893   51 |    e = WALKING_DOWNSTAIRS
+    0    0    0  102   51  920 |    f = WALKING_UPSTAIRS
+

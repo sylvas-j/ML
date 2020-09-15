@@ -1,0 +1,71 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     activity_recognition_dataset_modifier-weka.filters.unsupervised.attribute.Remove-R1-9,11-40,43-49,52,55-56,58-102,106-234,236-260,262-287,290-366,370-510,512-523,525-558,560-562
+Instances:    7352
+Attributes:   22
+              tBodyAcc-max()-X
+              tGravityAcc-mean()-X
+              tGravityAcc-mean()-Y
+              tGravityAcc-max()-X
+              tGravityAcc-max()-Y
+              tGravityAcc-min()-X
+              tGravityAcc-min()-Y
+              tGravityAcc-energy()-X
+              tBodyAccJerk-entropy()-X
+              tBodyAccJerk-entropy()-Y
+              tBodyAccJerk-entropy()-Z
+              tBodyAccJerkMag-entropy()
+              tBodyGyroJerkMag-entropy()
+              fBodyAcc-entropy()-X
+              fBodyAcc-entropy()-Y
+              fBodyAccJerk-entropy()-X
+              fBodyAccJerk-entropy()-Y
+              fBodyAccJerk-entropy()-Z
+              fBodyAccMag-entropy()
+              fBodyBodyAccJerkMag-entropy()
+              angle(X-gravityMean)
+              activity
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6997               95.1714 %
+Incorrectly Classified Instances       355                4.8286 %
+Kappa statistic                          0.9419
+Mean absolute error                      0.0163
+Root mean squared error                  0.1268
+Relative absolute error                  5.8979 %
+Root relative squared error             34.0796 %
+Total Number of Instances             7352     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.929    0.019    0.918      0.929    0.923      0.906    0.955     0.868     STANDING
+                 0.911    0.016    0.923      0.911    0.917      0.899    0.945     0.860     SITTING
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     LAYING
+                 0.969    0.010    0.951      0.969    0.960      0.952    0.979     0.930     WALKING
+                 0.960    0.006    0.959      0.960    0.960      0.954    0.979     0.931     WALKING_DOWNSTAIRS
+                 0.939    0.007    0.960      0.939    0.950      0.941    0.967     0.916     WALKING_UPSTAIRS
+Weighted Avg.    0.952    0.010    0.952      0.952    0.952      0.942    0.971     0.918     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f   <-- classified as
+ 1276   98    0    0    0    0 |    a = STANDING
+  114 1171    0    1    0    0 |    b = SITTING
+    0    0 1407    0    0    0 |    c = LAYING
+    0    0    0 1188   19   19 |    d = WALKING
+    0    0    0   16  947   23 |    e = WALKING_DOWNSTAIRS
+    0    0    0   44   21 1008 |    f = WALKING_UPSTAIRS
+
