@@ -1,0 +1,5 @@
+## THIS ARTICLE OUTLINE STEP INVOLVED TO PREPROCESS DATA FOR PREDICTION
+
+https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
+
+https://www.kdnuggets.com/2020/01/h2o-framework-machine-learning.html
